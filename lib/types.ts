@@ -78,6 +78,7 @@ export type Charger = {
   operatorId: string; // 충전업체
   speed: "급속" | "완속";
   connectors: Connector[];
+  outputKw: number | null; // 충전기 출력(kW), 모르면 null
   status: ChargerStatus;
   updatedAt: string; // 상태 갱신 시각
 };

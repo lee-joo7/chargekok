@@ -1,5 +1,6 @@
 [
-  { "id": "ioniq5-lr", "name": "현대 아이오닉 5 (롱레인지)", "batteryKwh": 84.0, "kmPerKwh": 4.9, "connectors": ["DC콤보", "AC완속"] },
+  { "id": "ioniq5-2021-lr-2wd", "name": "현대 아이오닉 5 2021년식 (롱레인지 2WD)", "batteryKwh": 72.6, "kmPerKwh": 5.1, "connectors": ["DC콤보", "AC완속"] },
+  { "id": "ioniq5-lr", "name": "현대 아이오닉 5 2024년식~ (롱레인지)", "batteryKwh": 84.0, "kmPerKwh": 4.9, "connectors": ["DC콤보", "AC완속"] },
   { "id": "ioniq6-lr", "name": "현대 아이오닉 6 (롱레인지)", "batteryKwh": 84.0, "kmPerKwh": 5.5, "connectors": ["DC콤보", "AC완속"] },
   { "id": "kona-ev", "name": "현대 코나 일렉트릭 (롱레인지)", "batteryKwh": 64.8, "kmPerKwh": 5.3, "connectors": ["DC콤보", "AC완속"] },
   { "id": "casper-ev", "name": "현대 캐스퍼 일렉트릭", "batteryKwh": 49.0, "kmPerKwh": 5.4, "connectors": ["DC콤보", "AC완속"] },
