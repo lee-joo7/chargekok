@@ -106,7 +106,14 @@ export type Recommendation = {
   isStale: boolean; // updatedAt이 STALE_AFTER_MINUTES(40분) 넘게 지남
   connectorUnknown: boolean; // 차종을 몰라 충전구 확인 필요
   hasEpit: boolean; // 지금 쓸 수 있는 현대 E-pit 충전기가 있음 (1순위에서 가장 먼저 고름)
+  firstReason?: FirstReason; // 1순위에만: 왜 1순위로 골랐는지
 };
+
+// 1순위를 고른 이유 (화면과 AI 답변에 한 줄로 보여 준다)
+export type FirstReason =
+  | "E-pit회원" // E-pit 회원이라 쓸 수 있는 E-pit이 있는 휴게소를 먼저 골랐음
+  | "가능2대이상" // 충전 가능 2대 이상인 곳 중 가장 먼 곳
+  | "가장먼곳"; // 2대 이상인 곳이 없어 1대인 곳 중 가장 먼 곳
 
 export type EmptyReason = "회원업체없음" | "모두고장" | "거리부족";
 
