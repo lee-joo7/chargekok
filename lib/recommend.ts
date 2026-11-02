@@ -5,6 +5,8 @@ import type { CandidateStop, RoutePlan } from "./routes";
 import type { Charger, ChargerCounts, EmptyReason, Recommendation, StopsResult, Vehicle } from "./types";
 
 const MAX_RECOMMENDATIONS = 3;
+// 정보가 약 30분 늦을 수 있어, 1순위는 "가능"이 이 대수 이상인 곳에서 고른다 (그런 곳이 없을 때만 1대인 곳)
+const MIN_AVAILABLE_FOR_FIRST = 2;
 
 export type RecommendInput = {
   plan: RoutePlan;
@@ -45,10 +47,11 @@ export function recommend({ plan, usableKm, chargers, operatorIds, vehicle, now 
   // 3) 지금 "충전 가능"이 1대 이상인 곳만
   const eligible = scored.filter((s) => s.counts.available >= 1);
 
-  // 4) 1순위 = 가장 멀리 갈 수 있는 곳 (같으면 가능 대수가 많은 곳), 최대 3곳
-  const ranked = [...eligible]
-    .sort((a, b) => b.kmFromOrigin - a.kmFromOrigin || b.counts.available - a.counts.available)
-    .slice(0, MAX_RECOMMENDATIONS);
+  // 4) 가장 멀리 갈 수 있는 곳부터 (같으면 가능 대수가 많은 곳)
+  const byFar = [...eligible].sort((a, b) => b.kmFromOrigin - a.kmFromOrigin || b.counts.available - a.counts.available);
+  // 1순위는 가능 2대 이상인 곳 중 가장 먼 곳, 없으면 가장 먼 곳. 2·3순위는 나머지를 먼 순으로.
+  const first = byFar.find((s) => s.counts.available >= MIN_AVAILABLE_FOR_FIRST) ?? byFar[0];
+  const ranked = first ? [first, ...byFar.filter((s) => s !== first)].slice(0, MAX_RECOMMENDATIONS) : [];
 
   const recommendations: Recommendation[] = ranked.map((s, i) => ({
     rank: (i + 1) as 1 | 2 | 3,
