@@ -44,6 +44,15 @@
     ]
   },
   {
+    "id": "gb-05-n",
+    "name": "건천휴게소(서울방향)",
+    "highway": "경부고속도로",
+    "signDirection": "서울방향",
+    "stationIds": [
+      "ME21A204"
+    ]
+  },
+  {
     "id": "gb-05-s",
     "name": "건천휴게소(부산방향)",
     "highway": "경부고속도로",
@@ -52,15 +61,6 @@
       "ME178046",
       "ME18C137",
       "ME21A304"
-    ]
-  },
-  {
-    "id": "gb-05-n",
-    "name": "건천휴게소(서울방향)",
-    "highway": "경부고속도로",
-    "signDirection": "서울방향",
-    "stationIds": [
-      "ME21A204"
     ]
   },
   {
@@ -85,17 +85,6 @@
     ]
   },
   {
-    "id": "gb-09-s",
-    "name": "칠곡휴게소(부산방향)",
-    "highway": "경부고속도로",
-    "signDirection": "부산방향",
-    "stationIds": [
-      "CV004584",
-      "HD000007",
-      "ME21A306"
-    ]
-  },
-  {
     "id": "gb-09-n",
     "name": "칠곡휴게소(서울방향)",
     "highway": "경부고속도로",
@@ -106,15 +95,14 @@
     ]
   },
   {
-    "id": "gb-10-s",
-    "name": "김천휴게소(부산방향)",
+    "id": "gb-09-s",
+    "name": "칠곡휴게소(부산방향)",
     "highway": "경부고속도로",
     "signDirection": "부산방향",
     "stationIds": [
-      "CV004761",
-      "ME178004",
-      "ME21A312",
-      "ME21D020"
+      "CV004584",
+      "HD000007",
+      "ME21A306"
     ]
   },
   {
@@ -130,15 +118,15 @@
     ]
   },
   {
-    "id": "gb-11-s",
-    "name": "추풍령휴게소(부산방향)",
+    "id": "gb-10-s",
+    "name": "김천휴게소(부산방향)",
     "highway": "경부고속도로",
     "signDirection": "부산방향",
     "stationIds": [
-      "CV004577",
-      "EC470015",
-      "EC470016",
-      "ME21A902"
+      "CV004761",
+      "ME178004",
+      "ME21A312",
+      "ME21D020"
     ]
   },
   {
@@ -153,12 +141,15 @@
     ]
   },
   {
-    "id": "gb-12-s",
-    "name": "황간휴게소(부산방향)",
+    "id": "gb-11-s",
+    "name": "추풍령휴게소(부산방향)",
     "highway": "경부고속도로",
     "signDirection": "부산방향",
     "stationIds": [
-      "SGMAC022"
+      "CV004577",
+      "EC470015",
+      "EC470016",
+      "ME21A902"
     ]
   },
   {
@@ -174,6 +165,15 @@
     ]
   },
   {
+    "id": "gb-12-s",
+    "name": "황간휴게소(부산방향)",
+    "highway": "경부고속도로",
+    "signDirection": "부산방향",
+    "stationIds": [
+      "SGMAC022"
+    ]
+  },
+  {
     "id": "gb-13-s",
     "name": "금강휴게소(부산방향)",
     "highway": "경부고속도로",
@@ -184,6 +184,15 @@
     ]
   },
   {
+    "id": "gb-14-n",
+    "name": "옥천휴게소(서울방향)",
+    "highway": "경부고속도로",
+    "signDirection": "서울방향",
+    "stationIds": [
+      "SGMAC028"
+    ]
+  },
+  {
     "id": "gb-14-s",
     "name": "옥천휴게소(부산방향)",
     "highway": "경부고속도로",
@@ -191,15 +200,6 @@
     "stationIds": [
       "ME18C282",
       "SGMAC017"
-    ]
-  },
-  {
-    "id": "gb-14-n",
-    "name": "옥천휴게소(서울방향)",
-    "highway": "경부고속도로",
-    "signDirection": "서울방향",
-    "stationIds": [
-      "SGMAC028"
     ]
   },
   {
@@ -214,15 +214,6 @@
     ]
   },
   {
-    "id": "gb-16-s",
-    "name": "죽암휴게소(부산방향)",
-    "highway": "경부고속도로",
-    "signDirection": "부산방향",
-    "stationIds": [
-      "ST431146"
-    ]
-  },
-  {
     "id": "gb-16-n",
     "name": "죽암휴게소(서울방향)",
     "highway": "경부고속도로",
@@ -230,6 +221,15 @@
     "stationIds": [
       "ME178019",
       "ME21A308"
+    ]
+  },
+  {
+    "id": "gb-16-s",
+    "name": "죽암휴게소(부산방향)",
+    "highway": "경부고속도로",
+    "signDirection": "부산방향",
+    "stationIds": [
+      "ST431146"
     ]
   },
   {
@@ -299,17 +299,6 @@
     ]
   },
   {
-    "id": "gb-23-s",
-    "name": "안성휴게소(부산방향)",
-    "highway": "경부고속도로",
-    "signDirection": "부산방향",
-    "stationIds": [
-      "HD000003",
-      "ME18B303",
-      "ST601529"
-    ]
-  },
-  {
     "id": "gb-23-n",
     "name": "안성휴게소(서울방향)",
     "highway": "경부고속도로",
@@ -319,6 +308,17 @@
       "ME181108",
       "ME184013",
       "ME20A403"
+    ]
+  },
+  {
+    "id": "gb-23-s",
+    "name": "안성휴게소(부산방향)",
+    "highway": "경부고속도로",
+    "signDirection": "부산방향",
+    "stationIds": [
+      "HD000003",
+      "ME18B303",
+      "ST601529"
     ]
   },
   {
@@ -349,6 +349,231 @@
     "stationIds": [
       "ME178009",
       "ST116534"
+    ]
+  },
+  {
+    "id": "jn-01-n",
+    "name": "칠서휴게소(양평방향)",
+    "highway": "중부내륙고속도로",
+    "signDirection": "양평방향",
+    "stationIds": [
+      "CV004560",
+      "EC480008",
+      "KP005386"
+    ]
+  },
+  {
+    "id": "jn-02-s",
+    "name": "영산휴게소(창원방향)",
+    "highway": "중부내륙고속도로",
+    "signDirection": "창원방향",
+    "stationIds": [
+      "BE241244",
+      "ST487404"
+    ]
+  },
+  {
+    "id": "jn-03-n",
+    "name": "현풍휴게소(대구방향)",
+    "highway": "중부내륙고속도로",
+    "signDirection": "대구방향",
+    "stationIds": [
+      "BE241250",
+      "KP005311"
+    ]
+  },
+  {
+    "id": "jn-03-s",
+    "name": "현풍휴게소(창원방향)",
+    "highway": "중부내륙고속도로",
+    "signDirection": "창원방향",
+    "stationIds": [
+      "BE241251",
+      "KP005312"
+    ]
+  },
+  {
+    "id": "jn-04-n",
+    "name": "남성주참외휴게소(양평방향)",
+    "highway": "중부내륙고속도로",
+    "signDirection": "양평방향",
+    "stationIds": [
+      "BE241231",
+      "ST478401"
+    ]
+  },
+  {
+    "id": "jn-04-s",
+    "name": "남성주참외휴게소(창원방향)",
+    "highway": "중부내륙고속도로",
+    "signDirection": "창원방향",
+    "stationIds": [
+      "CV004575",
+      "EC470009",
+      "ME21A105"
+    ]
+  },
+  {
+    "id": "jn-05-n",
+    "name": "성주휴게소(양평방향)",
+    "highway": "중부내륙고속도로",
+    "signDirection": "양평방향",
+    "stationIds": [
+      "CV004564",
+      "ME183211",
+      "ME21A911"
+    ]
+  },
+  {
+    "id": "jn-05-s",
+    "name": "성주휴게소(창원방향)",
+    "highway": "중부내륙고속도로",
+    "signDirection": "창원방향",
+    "stationIds": [
+      "EC470011",
+      "ME183212"
+    ]
+  },
+  {
+    "id": "jn-06-n",
+    "name": "선산휴게소(양평방향)",
+    "highway": "중부내륙고속도로",
+    "signDirection": "양평방향",
+    "stationIds": [
+      "BE241226",
+      "ST471927"
+    ]
+  },
+  {
+    "id": "jn-06-s",
+    "name": "선산휴게소(창원방향)",
+    "highway": "중부내륙고속도로",
+    "signDirection": "창원방향",
+    "stationIds": [
+      "ME20C156",
+      "ME21A406"
+    ]
+  },
+  {
+    "id": "jn-07-n",
+    "name": "문경휴게소(양평방향)",
+    "highway": "중부내륙고속도로",
+    "signDirection": "양평방향",
+    "stationIds": [
+      "BE241224",
+      "HD000008"
+    ]
+  },
+  {
+    "id": "jn-07-s",
+    "name": "문경휴게소(창원방향)",
+    "highway": "중부내륙고속도로",
+    "signDirection": "창원방향",
+    "stationIds": [
+      "BE241225",
+      "ST472810"
+    ]
+  },
+  {
+    "id": "jn-08-n",
+    "name": "괴산휴게소(양평방향)",
+    "highway": "중부내륙고속도로",
+    "signDirection": "양평방향",
+    "stationIds": [
+      "ME21A403"
+    ]
+  },
+  {
+    "id": "jn-08-s",
+    "name": "괴산휴게소(창원방향)",
+    "highway": "중부내륙고속도로",
+    "signDirection": "창원방향",
+    "stationIds": [
+      "BE241223",
+      "ST437604"
+    ]
+  },
+  {
+    "id": "jn-09-n",
+    "name": "충주휴게소(양평방향)",
+    "highway": "중부내륙고속도로",
+    "signDirection": "양평방향",
+    "stationIds": [
+      "BE241229",
+      "ME178070",
+      "ME184147",
+      "ME19D107",
+      "ME21A907"
+    ]
+  },
+  {
+    "id": "jn-09-s",
+    "name": "충주휴게소(창원방향)",
+    "highway": "중부내륙고속도로",
+    "signDirection": "창원방향",
+    "stationIds": [
+      "EC430011",
+      "ME178069",
+      "ME21A401"
+    ]
+  },
+  {
+    "id": "jn-11-n",
+    "name": "여주휴게소(인천방향)",
+    "highway": "영동고속도로",
+    "signDirection": "인천방향",
+    "stationIds": [
+      "BE241213",
+      "ST416713"
+    ]
+  },
+  {
+    "id": "jn-11-s",
+    "name": "여주휴게소(강릉방향)",
+    "highway": "영동고속도로",
+    "signDirection": "강릉방향",
+    "stationIds": [
+      "BE241212",
+      "KP005430",
+      "ST416712"
+    ]
+  },
+  {
+    "id": "jn-12-n",
+    "name": "덕평자연휴게소(인천방향)",
+    "highway": "영동고속도로",
+    "signDirection": "인천방향",
+    "stationIds": [
+      "SGMAC010"
+    ]
+  },
+  {
+    "id": "jn-12-s",
+    "name": "덕평자연휴게소(강릉방향)",
+    "highway": "영동고속도로",
+    "signDirection": "강릉방향",
+    "stationIds": [
+      "SGMAC011"
+    ]
+  },
+  {
+    "id": "jn-13-n",
+    "name": "용인휴게소(인천방향)",
+    "highway": "영동고속도로",
+    "signDirection": "인천방향",
+    "stationIds": [
+      "BE241216",
+      "KP005429"
+    ]
+  },
+  {
+    "id": "jn-13-s",
+    "name": "용인휴게소(강릉방향)",
+    "highway": "영동고속도로",
+    "signDirection": "강릉방향",
+    "stationIds": [
+      "BE241215",
+      "KP005428"
     ]
   }
 ]

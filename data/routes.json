@@ -122,5 +122,77 @@
         "southbound": "gb-26-s"
       }
     ]
+  },
+  {
+    "id": "jungbu-naeryuk",
+    "name": "중부내륙고속도로 경유",
+    "highways": [
+      "중부내륙고속도로",
+      "영동고속도로"
+    ],
+    "totalKm": 322,
+    "stops": [
+      {
+        "km": 15,
+        "northbound": "jn-01-n"
+      },
+      {
+        "km": 22,
+        "southbound": "jn-02-s"
+      },
+      {
+        "km": 56,
+        "northbound": "jn-03-n",
+        "southbound": "jn-03-s"
+      },
+      {
+        "km": 78,
+        "northbound": "jn-04-n"
+      },
+      {
+        "km": 80,
+        "southbound": "jn-04-s"
+      },
+      {
+        "km": 98,
+        "northbound": "jn-05-n",
+        "southbound": "jn-05-s"
+      },
+      {
+        "km": 131,
+        "northbound": "jn-06-n",
+        "southbound": "jn-06-s"
+      },
+      {
+        "km": 174,
+        "northbound": "jn-07-n",
+        "southbound": "jn-07-s"
+      },
+      {
+        "km": 206,
+        "northbound": "jn-08-n",
+        "southbound": "jn-08-s"
+      },
+      {
+        "km": 233,
+        "northbound": "jn-09-n",
+        "southbound": "jn-09-s"
+      },
+      {
+        "km": 276,
+        "northbound": "jn-11-n",
+        "southbound": "jn-11-s"
+      },
+      {
+        "km": 293,
+        "northbound": "jn-12-n",
+        "southbound": "jn-12-s"
+      },
+      {
+        "km": 308,
+        "northbound": "jn-13-n",
+        "southbound": "jn-13-s"
+      }
+    ]
   }
 ]
