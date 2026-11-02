@@ -3,6 +3,10 @@
 // 외부 호출이 없는 순수 함수만 둔다 (서버·화면 어디서든 써도 안전)
 import type { Charger, ChargerStatus, Connector, Vehicle } from "./types";
 
+// 휴게소의 가장 최근 갱신이 이보다 오래되면 "정보가 오래됨"으로 본다
+// 공공데이터는 평소 약 30분 늦게 반영된다 (2026-11-02 측정: 정상 29~38분, 늦은 곳 47~52분)
+export const STALE_AFTER_MINUTES = 40;
+
 // 공공데이터 응답에서 쓰는 칸만 적는다
 export type RawCharger = {
   statId: string;

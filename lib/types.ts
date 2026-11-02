@@ -102,8 +102,8 @@ export type Recommendation = {
   restArea: RestArea;
   kmFromOrigin: number;
   counts: ChargerCounts;
-  updatedAt: string; // 센 충전기 중 가장 오래된 갱신 시각
-  isStale: boolean; // updatedAt이 10분 넘게 지남
+  updatedAt: string; // 센 충전기 중 가장 최근 갱신 시각
+  isStale: boolean; // updatedAt이 STALE_AFTER_MINUTES(40분) 넘게 지남
   connectorUnknown: boolean; // 차종을 몰라 충전구 확인 필요
 };
 
