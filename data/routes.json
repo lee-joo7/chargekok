@@ -1,0 +1,126 @@
+[
+  {
+    "id": "gyeongbu",
+    "name": "경부고속도로 경유",
+    "highways": [
+      "경부고속도로"
+    ],
+    "totalKm": 416,
+    "stops": [
+      {
+        "km": 9,
+        "northbound": "gb-01-n"
+      },
+      {
+        "km": 29,
+        "southbound": "gb-02-s"
+      },
+      {
+        "km": 43,
+        "northbound": "gb-03-n"
+      },
+      {
+        "km": 59,
+        "southbound": "gb-04-s"
+      },
+      {
+        "km": 74,
+        "northbound": "gb-05-n",
+        "southbound": "gb-05-s"
+      },
+      {
+        "km": 104,
+        "northbound": "gb-06-n"
+      },
+      {
+        "km": 110,
+        "southbound": "gb-07-s"
+      },
+      {
+        "km": 157,
+        "northbound": "gb-09-n",
+        "southbound": "gb-09-s"
+      },
+      {
+        "km": 186,
+        "northbound": "gb-10-n",
+        "southbound": "gb-10-s"
+      },
+      {
+        "km": 204,
+        "northbound": "gb-11-n",
+        "southbound": "gb-11-s"
+      },
+      {
+        "km": 219,
+        "northbound": "gb-12-n",
+        "southbound": "gb-12-s"
+      },
+      {
+        "km": 237,
+        "southbound": "gb-13-s"
+      },
+      {
+        "km": 245,
+        "northbound": "gb-14-n",
+        "southbound": "gb-14-s"
+      },
+      {
+        "km": 268,
+        "northbound": "gb-15-n"
+      },
+      {
+        "km": 276,
+        "southbound": "gb-16-s"
+      },
+      {
+        "km": 277,
+        "northbound": "gb-16-n"
+      },
+      {
+        "km": 297,
+        "southbound": "gb-17-s"
+      },
+      {
+        "km": 304,
+        "northbound": "gb-18-n"
+      },
+      {
+        "km": 313,
+        "southbound": "gb-19-s"
+      },
+      {
+        "km": 324,
+        "northbound": "gb-20-n"
+      },
+      {
+        "km": 332,
+        "southbound": "gb-21-s"
+      },
+      {
+        "km": 343,
+        "northbound": "gb-22-n"
+      },
+      {
+        "km": 352,
+        "southbound": "gb-23-s"
+      },
+      {
+        "km": 360,
+        "northbound": "gb-23-n"
+      },
+      {
+        "km": 380,
+        "southbound": "gb-24-s"
+      },
+      {
+        "km": 391,
+        "northbound": "gb-25-n"
+      },
+      {
+        "km": 408,
+        "southbound": "gb-26-s"
+      }
+    ]
+  }
+]
