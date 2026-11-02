@@ -1,0 +1,2758 @@
+[
+  {
+    "id": "z-11110",
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 9,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 45,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 45,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11140",
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 7,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 44,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 44,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11170",
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 5,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 39,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 39,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11200",
+    "sido": "서울특별시",
+    "sigungu": "성동구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 5,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 42,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 42,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11215",
+    "sido": "서울특별시",
+    "sigungu": "광진구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 8,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 38,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 38,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11230",
+    "sido": "서울특별시",
+    "sigungu": "동대문구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 8,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 43,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 43,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11260",
+    "sido": "서울특별시",
+    "sigungu": "중랑구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 14,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 46,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 46,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11290",
+    "sido": "서울특별시",
+    "sigungu": "성북구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 11,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 47,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 47,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11305",
+    "sido": "서울특별시",
+    "sigungu": "강북구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 15,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 52,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 52,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11320",
+    "sido": "서울특별시",
+    "sigungu": "도봉구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 21,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 57,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 57,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11350",
+    "sido": "서울특별시",
+    "sigungu": "노원구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 17,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 52,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 52,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11380",
+    "sido": "서울특별시",
+    "sigungu": "은평구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 16,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 51,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 51,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11410",
+    "sido": "서울특별시",
+    "sigungu": "서대문구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 11,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 46,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 46,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11440",
+    "sido": "서울특별시",
+    "sigungu": "마포구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 14,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 47,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 47,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11470",
+    "sido": "서울특별시",
+    "sigungu": "양천구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 18,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 44,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 44,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11500",
+    "sido": "서울특별시",
+    "sigungu": "강서구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 23,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 52,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 52,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11530",
+    "sido": "서울특별시",
+    "sigungu": "구로구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 18,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 42,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 42,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11545",
+    "sido": "서울특별시",
+    "sigungu": "금천구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 411km 지점)",
+        "kmToEntry": 16,
+        "entryKmOnRoute": 411
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 35,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 35,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11560",
+    "sido": "서울특별시",
+    "sigungu": "영등포구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 13,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 42,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 42,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11590",
+    "sido": "서울특별시",
+    "sigungu": "동작구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 415km 지점)",
+        "kmToEntry": 10,
+        "entryKmOnRoute": 415
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 38,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 38,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11620",
+    "sido": "서울특별시",
+    "sigungu": "관악구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 412km 지점)",
+        "kmToEntry": 10,
+        "entryKmOnRoute": 412
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 34,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 34,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11650",
+    "sido": "서울특별시",
+    "sigungu": "서초구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 412km 지점)",
+        "kmToEntry": 3,
+        "entryKmOnRoute": 412
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 32,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 32,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11680",
+    "sido": "서울특별시",
+    "sigungu": "강남구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 412km 지점)",
+        "kmToEntry": 3,
+        "entryKmOnRoute": 412
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 32,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 32,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11710",
+    "sido": "서울특별시",
+    "sigungu": "송파구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 410km 지점)",
+        "kmToEntry": 10,
+        "entryKmOnRoute": 410
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 31,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 31,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-11740",
+    "sido": "서울특별시",
+    "sigungu": "강동구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 415km 지점)",
+        "kmToEntry": 12,
+        "entryKmOnRoute": 415
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 37,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 37,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-26110",
+    "sido": "부산광역시",
+    "sigungu": "중구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 23,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 67,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 23,
+        "entryKmOnRoute": 0
+      }
+    ]
+  },
+  {
+    "id": "z-26140",
+    "sido": "부산광역시",
+    "sigungu": "서구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 24,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 65,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 24,
+        "entryKmOnRoute": 0
+      }
+    ]
+  },
+  {
+    "id": "z-26170",
+    "sido": "부산광역시",
+    "sigungu": "동구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 19,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 67,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 19,
+        "entryKmOnRoute": 0
+      }
+    ]
+  },
+  {
+    "id": "z-26200",
+    "sido": "부산광역시",
+    "sigungu": "영도구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 25,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 71,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 25,
+        "entryKmOnRoute": 0
+      }
+    ]
+  },
+  {
+    "id": "z-26230",
+    "sido": "부산광역시",
+    "sigungu": "부산진구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 15,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 67,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 15,
+        "entryKmOnRoute": 0
+      }
+    ]
+  },
+  {
+    "id": "z-26260",
+    "sido": "부산광역시",
+    "sigungu": "동래구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 7,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 69,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 7,
+        "entryKmOnRoute": 0
+      }
+    ]
+  },
+  {
+    "id": "z-26290",
+    "sido": "부산광역시",
+    "sigungu": "남구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 18,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 73,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 18,
+        "entryKmOnRoute": 0
+      }
+    ]
+  },
+  {
+    "id": "z-26320",
+    "sido": "부산광역시",
+    "sigungu": "북구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 11,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 61,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 11,
+        "entryKmOnRoute": 0
+      }
+    ]
+  },
+  {
+    "id": "z-26350",
+    "sido": "부산광역시",
+    "sigungu": "해운대구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 12,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 76,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 12,
+        "entryKmOnRoute": 0
+      }
+    ]
+  },
+  {
+    "id": "z-26380",
+    "sido": "부산광역시",
+    "sigungu": "사하구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 27,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 60,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 27,
+        "entryKmOnRoute": 0
+      }
+    ]
+  },
+  {
+    "id": "z-26410",
+    "sido": "부산광역시",
+    "sigungu": "금정구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 3km 지점)",
+        "kmToEntry": 3,
+        "entryKmOnRoute": 3
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 3km 지점)",
+        "kmToEntry": 72,
+        "entryKmOnRoute": 3
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 3km 지점)",
+        "kmToEntry": 3,
+        "entryKmOnRoute": 3
+      }
+    ]
+  },
+  {
+    "id": "z-26440",
+    "sido": "부산광역시",
+    "sigungu": "강서구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 27,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 51,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 27,
+        "entryKmOnRoute": 0
+      }
+    ]
+  },
+  {
+    "id": "z-26470",
+    "sido": "부산광역시",
+    "sigungu": "연제구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 10,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 69,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 10,
+        "entryKmOnRoute": 0
+      }
+    ]
+  },
+  {
+    "id": "z-26500",
+    "sido": "부산광역시",
+    "sigungu": "수영구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 15,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 73,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 15,
+        "entryKmOnRoute": 0
+      }
+    ]
+  },
+  {
+    "id": "z-26530",
+    "sido": "부산광역시",
+    "sigungu": "사상구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 19,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 59,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 19,
+        "entryKmOnRoute": 0
+      }
+    ]
+  },
+  {
+    "id": "z-26710",
+    "sido": "부산광역시",
+    "sigungu": "기장군",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 1km 지점)",
+        "kmToEntry": 26,
+        "entryKmOnRoute": 1
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 8km 지점)",
+        "kmToEntry": 93,
+        "entryKmOnRoute": 8
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 1km 지점)",
+        "kmToEntry": 26,
+        "entryKmOnRoute": 1
+      }
+    ]
+  },
+  {
+    "id": "z-28125",
+    "sido": "인천광역시",
+    "sigungu": "제물포구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 46,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 61,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 61,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-28155",
+    "sido": "인천광역시",
+    "sigungu": "영종구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 68,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 82,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 82,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-28177",
+    "sido": "인천광역시",
+    "sigungu": "미추홀구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 415km 지점)",
+        "kmToEntry": 42,
+        "entryKmOnRoute": 415
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 56,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 56,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-28185",
+    "sido": "인천광역시",
+    "sigungu": "연수구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 409km 지점)",
+        "kmToEntry": 46,
+        "entryKmOnRoute": 409
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 55,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 55,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-28200",
+    "sido": "인천광역시",
+    "sigungu": "남동구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 413km 지점)",
+        "kmToEntry": 37,
+        "entryKmOnRoute": 413
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 51,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 51,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-28237",
+    "sido": "인천광역시",
+    "sigungu": "부평구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 34,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 55,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 55,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-28245",
+    "sido": "인천광역시",
+    "sigungu": "계양구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 33,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 57,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 57,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-28275",
+    "sido": "인천광역시",
+    "sigungu": "서해구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 40,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 62,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 62,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-28290",
+    "sido": "인천광역시",
+    "sigungu": "검단구",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 40,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 67,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 67,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-28710",
+    "sido": "인천광역시",
+    "sigungu": "강화군",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 70,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 99,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 99,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-28720",
+    "sido": "인천광역시",
+    "sigungu": "옹진군",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 69,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 81,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 81,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-31110",
+    "sido": "울산광역시",
+    "sigungu": "중구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 45km 지점)",
+        "kmToEntry": 21,
+        "entryKmOnRoute": 45
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 24km 지점)",
+        "kmToEntry": 99,
+        "entryKmOnRoute": 24
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 45km 지점)",
+        "kmToEntry": 21,
+        "entryKmOnRoute": 45
+      }
+    ]
+  },
+  {
+    "id": "z-31140",
+    "sido": "울산광역시",
+    "sigungu": "남구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 43km 지점)",
+        "kmToEntry": 22,
+        "entryKmOnRoute": 43
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 22km 지점)",
+        "kmToEntry": 97,
+        "entryKmOnRoute": 22
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 43km 지점)",
+        "kmToEntry": 22,
+        "entryKmOnRoute": 43
+      }
+    ]
+  },
+  {
+    "id": "z-31170",
+    "sido": "울산광역시",
+    "sigungu": "동구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 43km 지점)",
+        "kmToEntry": 35,
+        "entryKmOnRoute": 43
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 22km 지점)",
+        "kmToEntry": 110,
+        "entryKmOnRoute": 22
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 43km 지점)",
+        "kmToEntry": 35,
+        "entryKmOnRoute": 43
+      }
+    ]
+  },
+  {
+    "id": "z-31200",
+    "sido": "울산광역시",
+    "sigungu": "북구",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 48km 지점)",
+        "kmToEntry": 25,
+        "entryKmOnRoute": 48
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 26km 지점)",
+        "kmToEntry": 104,
+        "entryKmOnRoute": 26
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 49km 지점)",
+        "kmToEntry": 25,
+        "entryKmOnRoute": 49
+      }
+    ]
+  },
+  {
+    "id": "z-31710",
+    "sido": "울산광역시",
+    "sigungu": "울주군",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 40km 지점)",
+        "kmToEntry": 8,
+        "entryKmOnRoute": 40
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 25km 지점)",
+        "kmToEntry": 84,
+        "entryKmOnRoute": 25
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 40km 지점)",
+        "kmToEntry": 8,
+        "entryKmOnRoute": 40
+      }
+    ]
+  },
+  {
+    "id": "z-41110",
+    "sido": "경기도",
+    "sigungu": "수원시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 385km 지점)",
+        "kmToEntry": 8,
+        "entryKmOnRoute": 385
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 8,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 8,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41130",
+    "sido": "경기도",
+    "sigungu": "성남시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 399km 지점)",
+        "kmToEntry": 7,
+        "entryKmOnRoute": 399
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 20,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 20,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41150",
+    "sido": "경기도",
+    "sigungu": "의정부시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 31,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 67,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 67,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41170",
+    "sido": "경기도",
+    "sigungu": "안양시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 404km 지점)",
+        "kmToEntry": 13,
+        "entryKmOnRoute": 404
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 24,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 24,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41190",
+    "sido": "경기도",
+    "sigungu": "부천시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 28,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 49,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 49,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41210",
+    "sido": "경기도",
+    "sigungu": "광명시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 414km 지점)",
+        "kmToEntry": 19,
+        "entryKmOnRoute": 414
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 39,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 39,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41220",
+    "sido": "경기도",
+    "sigungu": "평택시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 352km 지점)",
+        "kmToEntry": 9,
+        "entryKmOnRoute": 352
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 316km 지점)",
+        "kmToEntry": 39,
+        "entryKmOnRoute": 316
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 355km 지점)",
+        "kmToEntry": 39,
+        "entryKmOnRoute": 355
+      }
+    ]
+  },
+  {
+    "id": "z-41250",
+    "sido": "경기도",
+    "sigungu": "동두천시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 55,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 90,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 90,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41270",
+    "sido": "경기도",
+    "sigungu": "안산시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 398km 지점)",
+        "kmToEntry": 30,
+        "entryKmOnRoute": 398
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 32,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 32,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41280",
+    "sido": "경기도",
+    "sigungu": "고양시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 33,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 66,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 66,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41290",
+    "sido": "경기도",
+    "sigungu": "과천시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 406km 지점)",
+        "kmToEntry": 8,
+        "entryKmOnRoute": 406
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 25,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 25,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41310",
+    "sido": "경기도",
+    "sigungu": "구리시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 17,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 46,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 46,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41360",
+    "sido": "경기도",
+    "sigungu": "남양주시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 27,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 54,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 54,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41370",
+    "sido": "경기도",
+    "sigungu": "오산시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 371km 지점)",
+        "kmToEntry": 6,
+        "entryKmOnRoute": 371
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 18,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 18,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41390",
+    "sido": "경기도",
+    "sigungu": "시흥시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 408km 지점)",
+        "kmToEntry": 33,
+        "entryKmOnRoute": 408
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 40,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 40,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41410",
+    "sido": "경기도",
+    "sigungu": "군포시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 400km 지점)",
+        "kmToEntry": 17,
+        "entryKmOnRoute": 400
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 23,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 23,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41430",
+    "sido": "경기도",
+    "sigungu": "의왕시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 397km 지점)",
+        "kmToEntry": 14,
+        "entryKmOnRoute": 397
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 18,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 18,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41450",
+    "sido": "경기도",
+    "sigungu": "하남시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 414km 지점)",
+        "kmToEntry": 20,
+        "entryKmOnRoute": 414
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 40,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 40,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41460",
+    "sido": "경기도",
+    "sigungu": "용인시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 384km 지점)",
+        "kmToEntry": 5,
+        "entryKmOnRoute": 384
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 317km 지점)",
+        "kmToEntry": 1,
+        "entryKmOnRoute": 317
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 357km 지점)",
+        "kmToEntry": 1,
+        "entryKmOnRoute": 357
+      }
+    ]
+  },
+  {
+    "id": "z-41480",
+    "sido": "경기도",
+    "sigungu": "파주시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 44,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 79,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 79,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41500",
+    "sido": "경기도",
+    "sigungu": "이천시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 385km 지점)",
+        "kmToEntry": 41,
+        "entryKmOnRoute": 385
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 287km 지점)",
+        "kmToEntry": 5,
+        "entryKmOnRoute": 287
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 326km 지점)",
+        "kmToEntry": 5,
+        "entryKmOnRoute": 326
+      }
+    ]
+  },
+  {
+    "id": "z-41550",
+    "sido": "경기도",
+    "sigungu": "안성시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 346km 지점)",
+        "kmToEntry": 12,
+        "entryKmOnRoute": 346
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 305km 지점)",
+        "kmToEntry": 34,
+        "entryKmOnRoute": 305
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 344km 지점)",
+        "kmToEntry": 34,
+        "entryKmOnRoute": 344
+      }
+    ]
+  },
+  {
+    "id": "z-41570",
+    "sido": "경기도",
+    "sigungu": "김포시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 42,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 71,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 71,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41590",
+    "sido": "경기도",
+    "sigungu": "화성시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 378km 지점)",
+        "kmToEntry": 23,
+        "entryKmOnRoute": 378
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 25,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 25,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41610",
+    "sido": "경기도",
+    "sigungu": "광주시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 393km 지점)",
+        "kmToEntry": 20,
+        "entryKmOnRoute": 393
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 312km 지점)",
+        "kmToEntry": 22,
+        "entryKmOnRoute": 312
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 351km 지점)",
+        "kmToEntry": 22,
+        "entryKmOnRoute": 351
+      }
+    ]
+  },
+  {
+    "id": "z-41630",
+    "sido": "경기도",
+    "sigungu": "양주시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 40,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 76,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 76,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41650",
+    "sido": "경기도",
+    "sigungu": "포천시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 57,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 89,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 89,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41670",
+    "sido": "경기도",
+    "sigungu": "여주시",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 386km 지점)",
+        "kmToEntry": 61,
+        "entryKmOnRoute": 386
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 270km 지점)",
+        "kmToEntry": 4,
+        "entryKmOnRoute": 270
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 310km 지점)",
+        "kmToEntry": 4,
+        "entryKmOnRoute": 310
+      }
+    ]
+  },
+  {
+    "id": "z-41800",
+    "sido": "경기도",
+    "sigungu": "연천군",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 82,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 322km 지점)",
+        "kmToEntry": 118,
+        "entryKmOnRoute": 322
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 361km 지점)",
+        "kmToEntry": 118,
+        "entryKmOnRoute": 361
+      }
+    ]
+  },
+  {
+    "id": "z-41820",
+    "sido": "경기도",
+    "sigungu": "가평군",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 416km 지점)",
+        "kmToEntry": 71,
+        "entryKmOnRoute": 416
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 270km 지점)",
+        "kmToEntry": 82,
+        "entryKmOnRoute": 270
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 310km 지점)",
+        "kmToEntry": 82,
+        "entryKmOnRoute": 310
+      }
+    ]
+  },
+  {
+    "id": "z-41830",
+    "sido": "경기도",
+    "sigungu": "양평군",
+    "region": "수도권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 396km 지점)",
+        "kmToEntry": 50,
+        "entryKmOnRoute": 396
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 270km 지점)",
+        "kmToEntry": 35,
+        "entryKmOnRoute": 270
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 310km 지점)",
+        "kmToEntry": 35,
+        "entryKmOnRoute": 310
+      }
+    ]
+  },
+  {
+    "id": "z-48120",
+    "sido": "경상남도",
+    "sigungu": "창원시",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 9km 지점)",
+        "kmToEntry": 46,
+        "entryKmOnRoute": 9
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 22,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 9km 지점)",
+        "kmToEntry": 46,
+        "entryKmOnRoute": 9
+      }
+    ]
+  },
+  {
+    "id": "z-48170",
+    "sido": "경상남도",
+    "sigungu": "진주시",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 9km 지점)",
+        "kmToEntry": 111,
+        "entryKmOnRoute": 9
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 44,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 9km 지점)",
+        "kmToEntry": 111,
+        "entryKmOnRoute": 9
+      }
+    ]
+  },
+  {
+    "id": "z-48220",
+    "sido": "경상남도",
+    "sigungu": "통영시",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 98,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 57,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 98,
+        "entryKmOnRoute": 0
+      }
+    ]
+  },
+  {
+    "id": "z-48240",
+    "sido": "경상남도",
+    "sigungu": "사천시",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 9km 지점)",
+        "kmToEntry": 126,
+        "entryKmOnRoute": 9
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 62,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 9km 지점)",
+        "kmToEntry": 126,
+        "entryKmOnRoute": 9
+      }
+    ]
+  },
+  {
+    "id": "z-48250",
+    "sido": "경상남도",
+    "sigungu": "김해시",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 8km 지점)",
+        "kmToEntry": 28,
+        "entryKmOnRoute": 8
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 41,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 8km 지점)",
+        "kmToEntry": 28,
+        "entryKmOnRoute": 8
+      }
+    ]
+  },
+  {
+    "id": "z-48270",
+    "sido": "경상남도",
+    "sigungu": "밀양시",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 25km 지점)",
+        "kmToEntry": 39,
+        "entryKmOnRoute": 25
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 26km 지점)",
+        "kmToEntry": 32,
+        "entryKmOnRoute": 26
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 25km 지점)",
+        "kmToEntry": 39,
+        "entryKmOnRoute": 25
+      }
+    ]
+  },
+  {
+    "id": "z-48310",
+    "sido": "경상남도",
+    "sigungu": "거제시",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 77,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 55,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 77,
+        "entryKmOnRoute": 0
+      }
+    ]
+  },
+  {
+    "id": "z-48330",
+    "sido": "경상남도",
+    "sigungu": "양산시",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 10km 지점)",
+        "kmToEntry": 3,
+        "entryKmOnRoute": 10
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 9km 지점)",
+        "kmToEntry": 63,
+        "entryKmOnRoute": 9
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 10km 지점)",
+        "kmToEntry": 3,
+        "entryKmOnRoute": 10
+      }
+    ]
+  },
+  {
+    "id": "z-48720",
+    "sido": "경상남도",
+    "sigungu": "의령군",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 140km 지점)",
+        "kmToEntry": 94,
+        "entryKmOnRoute": 140
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 9km 지점)",
+        "kmToEntry": 29,
+        "entryKmOnRoute": 9
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 9km 지점)",
+        "kmToEntry": 94,
+        "entryKmOnRoute": 9
+      }
+    ]
+  },
+  {
+    "id": "z-48730",
+    "sido": "경상남도",
+    "sigungu": "함안군",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 9km 지점)",
+        "kmToEntry": 75,
+        "entryKmOnRoute": 9
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 5km 지점)",
+        "kmToEntry": 9,
+        "entryKmOnRoute": 5
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 9km 지점)",
+        "kmToEntry": 75,
+        "entryKmOnRoute": 9
+      }
+    ]
+  },
+  {
+    "id": "z-48740",
+    "sido": "경상남도",
+    "sigungu": "창녕군",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 138km 지점)",
+        "kmToEntry": 57,
+        "entryKmOnRoute": 138
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 35km 지점)",
+        "kmToEntry": 2,
+        "entryKmOnRoute": 35
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 24km 지점)",
+        "kmToEntry": 71,
+        "entryKmOnRoute": 24
+      }
+    ]
+  },
+  {
+    "id": "z-48820",
+    "sido": "경상남도",
+    "sigungu": "고성군",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 98,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 42,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 98,
+        "entryKmOnRoute": 0
+      }
+    ]
+  },
+  {
+    "id": "z-48840",
+    "sido": "경상남도",
+    "sigungu": "남해군",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 152,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 91,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 152,
+        "entryKmOnRoute": 0
+      }
+    ]
+  },
+  {
+    "id": "z-48850",
+    "sido": "경상남도",
+    "sigungu": "하동군",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 140km 지점)",
+        "kmToEntry": 152,
+        "entryKmOnRoute": 140
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 0km 지점)",
+        "kmToEntry": 87,
+        "entryKmOnRoute": 0
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 9km 지점)",
+        "kmToEntry": 154,
+        "entryKmOnRoute": 9
+      }
+    ]
+  },
+  {
+    "id": "z-48860",
+    "sido": "경상남도",
+    "sigungu": "산청군",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 171km 지점)",
+        "kmToEntry": 107,
+        "entryKmOnRoute": 171
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 31km 지점)",
+        "kmToEntry": 73,
+        "entryKmOnRoute": 31
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 138km 지점)",
+        "kmToEntry": 135,
+        "entryKmOnRoute": 138
+      }
+    ]
+  },
+  {
+    "id": "z-48870",
+    "sido": "경상남도",
+    "sigungu": "함양군",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 189km 지점)",
+        "kmToEntry": 101,
+        "entryKmOnRoute": 189
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 75km 지점)",
+        "kmToEntry": 85,
+        "entryKmOnRoute": 75
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 157km 지점)",
+        "kmToEntry": 134,
+        "entryKmOnRoute": 157
+      }
+    ]
+  },
+  {
+    "id": "z-48880",
+    "sido": "경상남도",
+    "sigungu": "거창군",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 183km 지점)",
+        "kmToEntry": 69,
+        "entryKmOnRoute": 183
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 78km 지점)",
+        "kmToEntry": 53,
+        "entryKmOnRoute": 78
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 155km 지점)",
+        "kmToEntry": 101,
+        "entryKmOnRoute": 155
+      }
+    ]
+  },
+  {
+    "id": "z-48890",
+    "sido": "경상남도",
+    "sigungu": "합천군",
+    "region": "부산권",
+    "joins": [
+      {
+        "routeId": "gyeongbu",
+        "entryName": "가까운 나들목(경로 약 143km 지점)",
+        "kmToEntry": 71,
+        "entryKmOnRoute": 143
+      },
+      {
+        "routeId": "jungbu-naeryuk",
+        "entryName": "가까운 나들목(경로 약 44km 지점)",
+        "kmToEntry": 36,
+        "entryKmOnRoute": 44
+      },
+      {
+        "routeId": "sangju-yeongcheon",
+        "entryName": "가까운 나들목(경로 약 124km 지점)",
+        "kmToEntry": 97,
+        "entryKmOnRoute": 124
+      }
+    ]
+  }
+]
