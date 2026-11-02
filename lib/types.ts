@@ -105,6 +105,7 @@ export type Recommendation = {
   updatedAt: string; // 센 충전기 중 가장 최근 갱신 시각
   isStale: boolean; // updatedAt이 STALE_AFTER_MINUTES(40분) 넘게 지남
   connectorUnknown: boolean; // 차종을 몰라 충전구 확인 필요
+  hasEpit: boolean; // 지금 쓸 수 있는 현대 E-pit 충전기가 있음 (1순위에서 가장 먼저 고름)
 };
 
 export type EmptyReason = "회원업체없음" | "모두고장" | "거리부족";

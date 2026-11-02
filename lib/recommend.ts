@@ -7,6 +7,8 @@ import type { Charger, ChargerCounts, EmptyReason, Recommendation, StopsResult, 
 const MAX_RECOMMENDATIONS = 3;
 // 정보가 약 30분 늦을 수 있어, 1순위는 "가능"이 이 대수 이상인 곳에서 고른다 (그런 곳이 없을 때만 1대인 곳)
 const MIN_AVAILABLE_FOR_FIRST = 2;
+// 현대자동차 E-pit 초고속 충전소의 공공데이터 업체 코드. 지금 쓸 수 있는 E-pit이 있으면 1순위로 가장 먼저 고른다 (사용자 요청)
+export const EPIT_OPERATOR_ID = "HD";
 
 export type RecommendInput = {
   plan: RoutePlan;
@@ -17,7 +19,7 @@ export type RecommendInput = {
   now?: number; // 시험할 때 시각을 고정하려고 둔다
 };
 
-type Scored = CandidateStop & { counts: ChargerCounts; newest: number };
+type Scored = CandidateStop & { counts: ChargerCounts; newest: number; epitAvailable: number };
 
 function countOf(chargers: Charger[]): ChargerCounts {
   const by = (s: Charger["status"]) => chargers.filter((c) => c.status === s).length;
@@ -41,7 +43,8 @@ export function recommend({ plan, usableKm, chargers, operatorIds, vehicle, now 
   const scored: Scored[] = reachable.map((c) => {
     const usable = chargers.filter((ch) => ch.restAreaId === c.restArea.id && members.has(ch.operatorId) && fitsVehicle(ch, vehicle));
     const newest = usable.length ? Math.max(...usable.map((ch) => Date.parse(ch.updatedAt))) : 0;
-    return { ...c, counts: countOf(usable), newest };
+    const epitAvailable = usable.filter((ch) => ch.operatorId === EPIT_OPERATOR_ID && ch.status === "가능").length;
+    return { ...c, counts: countOf(usable), newest, epitAvailable };
   });
 
   // 3) 지금 "충전 가능"이 1대 이상인 곳만
@@ -49,8 +52,12 @@ export function recommend({ plan, usableKm, chargers, operatorIds, vehicle, now 
 
   // 4) 가장 멀리 갈 수 있는 곳부터 (같으면 가능 대수가 많은 곳)
   const byFar = [...eligible].sort((a, b) => b.kmFromOrigin - a.kmFromOrigin || b.counts.available - a.counts.available);
-  // 1순위는 가능 2대 이상인 곳 중 가장 먼 곳, 없으면 가장 먼 곳. 2·3순위는 나머지를 먼 순으로.
-  const first = byFar.find((s) => s.counts.available >= MIN_AVAILABLE_FOR_FIRST) ?? byFar[0];
+  // 1순위: ① 지금 쓸 수 있는 E-pit이 있는 곳 중 가장 먼 곳 → ② 가능 2대 이상인 곳 중 가장 먼 곳 → ③ 가장 먼 곳
+  // 2·3순위는 나머지를 먼 순으로.
+  const first =
+    byFar.find((s) => s.epitAvailable >= 1) ??
+    byFar.find((s) => s.counts.available >= MIN_AVAILABLE_FOR_FIRST) ??
+    byFar[0];
   const ranked = first ? [first, ...byFar.filter((s) => s !== first)].slice(0, MAX_RECOMMENDATIONS) : [];
 
   const recommendations: Recommendation[] = ranked.map((s, i) => ({
@@ -61,6 +68,7 @@ export function recommend({ plan, usableKm, chargers, operatorIds, vehicle, now 
     updatedAt: new Date(s.newest).toISOString(),
     isStale: now - s.newest > STALE_AFTER_MINUTES * 60_000,
     connectorUnknown: !vehicle,
+    hasEpit: s.epitAvailable >= 1,
   }));
 
   return {
