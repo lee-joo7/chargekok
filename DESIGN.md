@@ -379,6 +379,7 @@ my-app/
 │   ├── globals.css
 │   ├── api/chat/route.ts           # 챗봇 API (AI 도구 호출 처리)
 │   └── _components/                # 화면 조각 (밑줄 = 주소로 안 열림)
+│       ├── ChargekokApp.tsx        # 머리글 + 설정/대화 화면 전환 (브라우저 저장값을 읽음)
 │       ├── SetupPanel.tsx          # ⑤ 처음 설정
 │       ├── SavedRoutes.tsx         # ② 자주 가는 경로
 │       ├── ChatWindow.tsx          # ③④ 대화와 입력

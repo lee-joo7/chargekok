@@ -7,6 +7,9 @@ import type { Charger, ChargerStatus, Connector, Vehicle } from "./types";
 // 공공데이터는 평소 약 30분 늦게 반영된다 (2026-11-02 측정: 정상 29~38분, 늦은 곳 47~52분)
 export const STALE_AFTER_MINUTES = 40;
 
+// 현대자동차 E-pit 초고속 충전소의 공공데이터 업체 코드. 회원이면 쓸 수 있는 E-pit을 1순위로 가장 먼저 고른다 (사용자 요청)
+export const EPIT_OPERATOR_ID = "HD";
+
 // 공공데이터 응답에서 쓰는 칸만 적는다
 export type RawCharger = {
   statId: string;

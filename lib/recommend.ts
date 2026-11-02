@@ -1,6 +1,6 @@
 // 경로 위 후보 휴게소를 PRD 규칙대로 거르고 순위를 매긴다 (외부 호출 없음)
 // Design Ref: DESIGN.md §4 ⑤ / PRD 5번 must ① — 규칙은 AI에 맡기지 않고 여기서 지킨다 (CLAUDE.md 5절)
-import { STALE_AFTER_MINUTES, fitsVehicle } from "./charger-mapping";
+import { EPIT_OPERATOR_ID, STALE_AFTER_MINUTES, fitsVehicle } from "./charger-mapping";
 import type { CandidateStop, RoutePlan } from "./routes";
 import type { Charger, ChargerCounts, EmptyReason, FirstReason, Recommendation, StopsResult, Vehicle } from "./types";
 
@@ -14,8 +14,6 @@ export const FIRST_REASON_TEXT: Record<FirstReason, string> = {
 const MAX_RECOMMENDATIONS = 3;
 // 정보가 약 30분 늦을 수 있어, 1순위는 "가능"이 이 대수 이상인 곳에서 고른다 (그런 곳이 없을 때만 1대인 곳)
 const MIN_AVAILABLE_FOR_FIRST = 2;
-// 현대자동차 E-pit 초고속 충전소의 공공데이터 업체 코드. 지금 쓸 수 있는 E-pit이 있으면 1순위로 가장 먼저 고른다 (사용자 요청)
-export const EPIT_OPERATOR_ID = "HD";
 
 export type RecommendInput = {
   plan: RoutePlan;
