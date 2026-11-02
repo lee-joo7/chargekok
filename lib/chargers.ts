@@ -48,7 +48,14 @@ async function fetchStation(stationId: string): Promise<RawCharger[]> {
       lastError = error;
     }
   }
-  throw lastError;
+  throw lastError instanceof ChargerApiError ? lastError : new ChargerApiError(reasonOf(lastError));
+}
+
+// 실패 이유를 짧게 (주소에 키가 들어 있으므로 주소는 남기지 않는다)
+function reasonOf(error: unknown): string {
+  if (!(error instanceof Error)) return "알 수 없는 오류";
+  const cause = (error as Error & { cause?: { code?: string } }).cause?.code;
+  return cause ? `${error.name} (${cause})` : error.name;
 }
 
 // 여러 휴게소의 충전기를 한 번에 가져온다. 일부 충전소가 실패해도 나머지는 돌려준다.
@@ -56,6 +63,7 @@ export async function getChargers(restAreas: RestArea[]): Promise<ChargersResult
   const jobs = restAreas.flatMap((ra) => ra.stationIds.map((stationId) => ({ stationId, restAreaId: ra.id })));
   const chargers: Charger[] = [];
   const failedStationIds: string[] = [];
+  let firstFailure = "";
 
   for (let i = 0; i < jobs.length; i += CONCURRENCY) {
     const batch = jobs.slice(i, i + CONCURRENCY);
@@ -64,6 +72,7 @@ export async function getChargers(restAreas: RestArea[]): Promise<ChargersResult
       const job = batch[k];
       if (result.status === "rejected") {
         failedStationIds.push(job.stationId);
+        firstFailure ||= result.reason instanceof Error ? result.reason.message : String(result.reason);
         return;
       }
       for (const raw of result.value) {
@@ -71,11 +80,15 @@ export async function getChargers(restAreas: RestArea[]): Promise<ChargersResult
         if (charger) chargers.push(charger);
       }
     });
+    // 첫 묶음이 모두 실패하면 공공데이터 장애로 보고 더 기다리지 않는다 (응답 1분 이내 목표, PLAN SC-1)
+    if (i === 0 && failedStationIds.length === batch.length) {
+      throw new ChargerApiError(`충전기 정보를 불러올 수 없습니다: ${firstFailure}`);
+    }
   }
 
   // 전부 실패했으면 서비스 장애로 보고 오류를 낸다 (화면에 502 안내)
   if (jobs.length > 0 && failedStationIds.length === jobs.length) {
-    throw new ChargerApiError("충전기 정보를 불러올 수 없습니다");
+    throw new ChargerApiError(`충전기 정보를 불러올 수 없습니다: ${firstFailure}`);
   }
   return { chargers, failedStationIds };
 }
