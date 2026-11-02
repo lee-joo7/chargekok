@@ -575,5 +575,47 @@
       "BE241215",
       "KP005428"
     ]
+  },
+  {
+    "id": "sy-03-n",
+    "name": "삼국유사군위휴게소(서울방향)",
+    "highway": "상주영천고속도로",
+    "signDirection": "서울방향",
+    "stationIds": [
+      "ME18C251",
+      "ST600399"
+    ]
+  },
+  {
+    "id": "sy-03-s",
+    "name": "군위영천휴게소(하행)",
+    "highway": "상주영천고속도로",
+    "signDirection": "하행",
+    "stationIds": [
+      "ME178137",
+      "ST600400"
+    ]
+  },
+  {
+    "id": "sy-04-n",
+    "name": "낙동강구미휴게소(상행)",
+    "highway": "상주영천고속도로",
+    "signDirection": "상행",
+    "stationIds": [
+      "ME178135",
+      "ST600397"
+    ]
+  },
+  {
+    "id": "sy-04-s",
+    "name": "낙동강의성휴게소(하행)",
+    "highway": "상주영천고속도로",
+    "signDirection": "하행",
+    "stationIds": [
+      "ME178136",
+      "ME22A320",
+      "ME22C186",
+      "ST600398"
+    ]
   }
 ]

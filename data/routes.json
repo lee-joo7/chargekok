@@ -194,5 +194,82 @@
         "southbound": "jn-13-s"
       }
     ]
+  },
+  {
+    "id": "sangju-yeongcheon",
+    "name": "상주영천고속도로 경유",
+    "highways": [
+      "경부고속도로",
+      "상주영천고속도로",
+      "중부내륙고속도로",
+      "영동고속도로"
+    ],
+    "totalKm": 361,
+    "stops": [
+      {
+        "km": 9,
+        "northbound": "gb-01-n"
+      },
+      {
+        "km": 29,
+        "southbound": "gb-02-s"
+      },
+      {
+        "km": 43,
+        "northbound": "gb-03-n"
+      },
+      {
+        "km": 60,
+        "southbound": "gb-04-s"
+      },
+      {
+        "km": 75,
+        "northbound": "gb-05-n",
+        "southbound": "gb-05-s"
+      },
+      {
+        "km": 124,
+        "southbound": "sy-03-s"
+      },
+      {
+        "km": 126,
+        "northbound": "sy-03-n"
+      },
+      {
+        "km": 176,
+        "northbound": "sy-04-n",
+        "southbound": "sy-04-s"
+      },
+      {
+        "km": 216,
+        "northbound": "jn-07-n",
+        "southbound": "jn-07-s"
+      },
+      {
+        "km": 247,
+        "northbound": "jn-08-n",
+        "southbound": "jn-08-s"
+      },
+      {
+        "km": 273,
+        "northbound": "jn-09-n",
+        "southbound": "jn-09-s"
+      },
+      {
+        "km": 316,
+        "northbound": "jn-11-n",
+        "southbound": "jn-11-s"
+      },
+      {
+        "km": 333,
+        "northbound": "jn-12-n",
+        "southbound": "jn-12-s"
+      },
+      {
+        "km": 347,
+        "northbound": "jn-13-n",
+        "southbound": "jn-13-s"
+      }
+    ]
   }
 ]
