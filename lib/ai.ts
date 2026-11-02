@@ -7,8 +7,9 @@ import type { ChatCompletionFunctionTool, ChatCompletionMessageParam } from "ope
 
 import { getChargers } from "./chargers";
 import { calcRange, getVehicle } from "./range";
-import { FIRST_REASON_TEXT, recommend } from "./recommend";
+import { recommend } from "./recommend";
 import { planRoute } from "./routes";
+import { EMPTY_REASON_TEXT, FIRST_REASON_TEXT } from "./texts";
 import { findZone, zoneLabel } from "./zones";
 import type { ChatMessage, StopsResult, Understood, UserSettings, Zone } from "./types";
 
@@ -72,12 +73,6 @@ type ToolArgs = {
   range_km: number | null;
   highway: string | null;
 };
-
-const EMPTY_REASON_TEXT = {
-  거리부족: "지금 배터리로 여유 있게(80%) 갈 수 있는 거리 안에 휴게소가 없어요. 출발 전에 충전해 주세요.",
-  회원업체없음: "갈 수 있는 거리 안의 휴게소에 가입하신 충전업체의 충전기가 없어요.",
-  모두고장: "갈 수 있는 거리 안의 휴게소 충전기가 지금 모두 사용 중이거나 고장이에요.",
-} as const;
 
 const ASK_TEXT = {
   배터리: "지금 배터리가 몇 %인지, 또는 계기판의 주행 가능 거리를 물어본다.",

@@ -8,6 +8,7 @@ import vehiclesData from "@/data/vehicles.json";
 import { useSettings } from "@/lib/storage";
 import type { Vehicle } from "@/lib/types";
 
+import ChatWindow from "./ChatWindow";
 import SetupPanel from "./SetupPanel";
 
 const vehicles = vehiclesData as Vehicle[];
@@ -35,19 +36,17 @@ export default function ChargekokApp() {
         )}
       </header>
 
-      <main className="mx-auto w-full max-w-md flex-1 px-4 pb-8">
+      <main className="mx-auto w-full max-w-md flex-1 px-4">
         {settings === undefined ? null : showSetup ? (
           <SetupPanel initial={settings} canCancel={settings !== null} onDone={() => setEditing(false)} />
         ) : (
-          // 대화 화면은 PLAN 작업 14에서 이 자리에 만든다
-          <div className="rounded-lg border border-zinc-200 p-4 text-sm text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">
-            <p>설정을 저장했어요.</p>
-            <p className="mt-1">
+          <>
+            <p className="mb-3 text-xs text-zinc-500">
               충전업체 {settings.operatorIds.length}곳
               {settings.vehicleId ? ` · ${vehicles.find((v) => v.id === settings.vehicleId)?.name ?? "차종"}` : " · 차종 없음"}
             </p>
-            <p className="mt-3">곧 이곳에서 충전할 휴게소를 찾아 드려요.</p>
-          </div>
+            <ChatWindow settings={settings} />
+          </>
         )}
       </main>
     </div>

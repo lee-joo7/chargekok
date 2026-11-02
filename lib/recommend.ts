@@ -4,13 +4,6 @@ import { EPIT_OPERATOR_ID, STALE_AFTER_MINUTES, fitsVehicle } from "./charger-ma
 import type { CandidateStop, RoutePlan } from "./routes";
 import type { Charger, ChargerCounts, EmptyReason, FirstReason, Recommendation, StopsResult, Vehicle } from "./types";
 
-// 1순위 이유를 화면과 AI 답변에 보여 줄 한 줄
-export const FIRST_REASON_TEXT: Record<FirstReason, string> = {
-  "E-pit회원": "E-pit 회원이라 지금 쓸 수 있는 E-pit 충전기가 있는 휴게소를 1순위로 골랐어요",
-  가능2대이상: "충전 가능한 충전기가 2대 이상인 곳 중 가장 멀리 갈 수 있는 곳이에요",
-  가장먼곳: "충전 가능 2대 이상인 곳이 없어, 1대라도 있는 곳 중 가장 먼 곳을 골랐어요",
-};
-
 const MAX_RECOMMENDATIONS = 3;
 // 정보가 약 30분 늦을 수 있어, 1순위는 "가능"이 이 대수 이상인 곳에서 고른다 (그런 곳이 없을 때만 1대인 곳)
 const MIN_AVAILABLE_FOR_FIRST = 2;
