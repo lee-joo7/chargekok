@@ -99,7 +99,8 @@
 - [ ] 경로 저장 창: [이 경로 저장]을 누르면 이름 입력칸(예: "출장길")과 저장 버튼
 - [ ] 대화: 사용자 말풍선, AI 말풍선, 답을 기다리는 동안 "찾는 중…" 표시, AI가 알아들은 출발·도착 시·군·구 표시
 - [ ] 추천 카드: 순위 표시(1순위 강조), 1순위 이유 한 줄(예: "E-pit 회원이라 … 1순위로 골랐어요"), 방향이 들어간 휴게소 이름, 고속도로 이름, 출발지 기준 대략 거리, 급속/완속 수, 가능/충전 중/고장/확인 불가 수(회원 업체 + 맞는 충전구만 셈), "약 ○분 전 정보", "정보가 오래됨" 표시(가장 최근 갱신이 40분 초과 시), "충전구 종류를 확인하세요" 표시(차종 없을 때), "E-pit" 표시(쓸 수 있는 E-pit이 있을 때)
-- [ ] 추천 카드 버튼: [이름 복사](내비에 붙여 넣기용), [이 경로 저장]
+- [ ] 추천 카드 버튼: [이름 복사](내비에 붙여 넣기용)
+- [ ] 답변 아래 [☆ 이 경로 저장]: 출발·도착을 알아들은 답에만 보임 (경로는 답 하나에 하나라 카드마다 두지 않음)
 - [ ] 경로 추천(B)일 때: 추천 경로 이름과 이유 한 줄
 - [ ] 안내 말풍선: "충전 없이 도착할 수 있어요", "조건에 맞는 휴게소가 없어요 (이유)", 범위 밖 안내, 갈 수 있는 도로 목록
 - [ ] 입력: "동네 이름이나 역 이름 정도면 충분해요" 안내 문구, 입력창, 보내기 버튼(빈 입력이면 비활성)
@@ -256,7 +257,8 @@ type StopsResult =
 
 // 브라우저에 저장하는 값 (localStorage)
 type UserSettings = { operatorIds: string[]; vehicleId?: string };
-type SavedRoute = { id: string; label: string; originZoneId: string; destinationZoneId: string; highway?: string };
+type SavedRoute = { id: string; label: string; originZoneId: string; originLabel: string; destinationZoneId: string; destinationLabel: string; highway?: string };
+// 최대 10개, 같은 출발·도착·도로는 하나만 (다시 저장하면 이름만 바뀌고 맨 앞으로)
 ```
 
 ### 4.3 API
@@ -382,6 +384,7 @@ my-app/
 │       ├── ChargekokApp.tsx        # 머리글 + 설정/대화 화면 전환 (브라우저 저장값을 읽음)
 │       ├── SetupPanel.tsx          # ⑤ 처음 설정
 │       ├── SavedRoutes.tsx         # ② 자주 가는 경로
+│       ├── SaveRouteButton.tsx     # 답변 아래 [이 경로 저장]
 │       ├── ChatWindow.tsx          # ③④ 대화와 입력
 │       └── RecommendationCard.tsx  # 추천 카드
 ├── lib/

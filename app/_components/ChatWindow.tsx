@@ -6,6 +6,8 @@ import { useEffect, useRef, useState } from "react";
 import type { ChatErrorResponse, ChatMessage, ChatResponse, UserSettings } from "@/lib/types";
 
 import RecommendationCard from "./RecommendationCard";
+import SaveRouteButton from "./SaveRouteButton";
+import SavedRoutes, { routeQuestion } from "./SavedRoutes";
 
 const MAX_INPUT_CHARS = 500;
 const MAX_HISTORY = 10;
@@ -20,6 +22,18 @@ export default function ChatWindow({ settings }: { settings: UserSettings }) {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const endRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  // 저장된 경로를 누르면 질문을 채우고, 배터리만 이어서 쓰도록 입력창 끝에 커서를 둔다
+  function pickRoute(text: string) {
+    setInput(text);
+    requestAnimationFrame(() => {
+      const el = inputRef.current;
+      if (!el) return;
+      el.focus();
+      el.setSelectionRange(text.length, text.length);
+    });
+  }
 
   // 새 말풍선이 생기면 맨 아래로 내린다
   useEffect(() => {
@@ -61,6 +75,7 @@ export default function ChatWindow({ settings }: { settings: UserSettings }) {
 
   return (
     <div className="flex flex-col">
+      <SavedRoutes onPick={(r) => pickRoute(routeQuestion(r))} />
       <div className="flex flex-col gap-3 pb-4" aria-live="polite">
         {bubbles.length === 0 && (
           <p className="rounded-lg bg-zinc-100 p-3 text-sm text-zinc-600 dark:bg-zinc-900 dark:text-zinc-400">
@@ -107,6 +122,7 @@ export default function ChatWindow({ settings }: { settings: UserSettings }) {
                   ))}
                 </>
               )}
+              {understood && <SaveRouteButton understood={understood} />}
             </div>
           );
         })}
@@ -128,6 +144,7 @@ export default function ChatWindow({ settings }: { settings: UserSettings }) {
             질문
           </label>
           <input
+            ref={inputRef}
             id="chat-input"
             value={input}
             onChange={(e) => setInput(e.target.value)}

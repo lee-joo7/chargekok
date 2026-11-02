@@ -140,9 +140,11 @@ export type UserSettings = {
 
 export type SavedRoute = {
   id: string;
-  label: string;
+  label: string; // 사용자가 붙인 이름, 예: "출장길"
   originZoneId: string;
+  originLabel: string; // 화면에 보여 줄 이름, 예: "부산 해운대구"
   destinationZoneId: string;
+  destinationLabel: string;
   highway?: string;
 };
 
