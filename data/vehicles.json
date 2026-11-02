@@ -1,0 +1,15 @@
+[
+  { "id": "ioniq5-lr", "name": "현대 아이오닉 5 (롱레인지)", "batteryKwh": 84.0, "kmPerKwh": 4.9, "connectors": ["DC콤보", "AC완속"] },
+  { "id": "ioniq6-lr", "name": "현대 아이오닉 6 (롱레인지)", "batteryKwh": 84.0, "kmPerKwh": 5.5, "connectors": ["DC콤보", "AC완속"] },
+  { "id": "kona-ev", "name": "현대 코나 일렉트릭 (롱레인지)", "batteryKwh": 64.8, "kmPerKwh": 5.3, "connectors": ["DC콤보", "AC완속"] },
+  { "id": "casper-ev", "name": "현대 캐스퍼 일렉트릭", "batteryKwh": 49.0, "kmPerKwh": 5.4, "connectors": ["DC콤보", "AC완속"] },
+  { "id": "gv60", "name": "제네시스 GV60", "batteryKwh": 77.4, "kmPerKwh": 4.6, "connectors": ["DC콤보", "AC완속"] },
+  { "id": "ev3-lr", "name": "기아 EV3 (롱레인지)", "batteryKwh": 81.4, "kmPerKwh": 5.3, "connectors": ["DC콤보", "AC완속"] },
+  { "id": "ev6-lr", "name": "기아 EV6 (롱레인지)", "batteryKwh": 84.0, "kmPerKwh": 4.9, "connectors": ["DC콤보", "AC완속"] },
+  { "id": "ev9", "name": "기아 EV9", "batteryKwh": 99.8, "kmPerKwh": 4.0, "connectors": ["DC콤보", "AC완속"] },
+  { "id": "niro-ev", "name": "기아 니로 EV", "batteryKwh": 64.8, "kmPerKwh": 5.2, "connectors": ["DC콤보", "AC완속"] },
+  { "id": "ray-ev", "name": "기아 레이 EV", "batteryKwh": 35.2, "kmPerKwh": 5.0, "connectors": ["DC콤보", "AC완속"] },
+  { "id": "torres-evx", "name": "KGM 토레스 EVX", "batteryKwh": 73.4, "kmPerKwh": 4.7, "connectors": ["DC콤보", "AC완속"] },
+  { "id": "model3-lr", "name": "테슬라 모델 3 (롱레인지)", "batteryKwh": 78.0, "kmPerKwh": 5.5, "connectors": ["NACS", "DC콤보", "AC완속"] },
+  { "id": "modely-lr", "name": "테슬라 모델 Y (롱레인지)", "batteryKwh": 78.0, "kmPerKwh": 5.0, "connectors": ["NACS", "DC콤보", "AC완속"] }
+]
