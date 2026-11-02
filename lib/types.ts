@@ -119,7 +119,7 @@ export type StopsResult =
       recommendations: Recommendation[]; // 0~3개
       emptyReason?: EmptyReason; // 0개일 때 이유
     }
-  | { kind: "needsMoreInfo"; ask: "배터리" | "차종또는km" }
+  | { kind: "needsMoreInfo"; ask: "배터리" | "차종또는km" | "출발지" | "도착지"; candidates?: string[] } // 같은 이름의 구가 여러 곳이면 후보
   | { kind: "outOfScope"; why: "지역밖" | "같은권역" }
   | { kind: "roadMismatch"; availableHighways: string[] };
 
