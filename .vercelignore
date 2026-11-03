@@ -1,0 +1,7 @@
+# Vercel에 올리지 않을 파일 (비밀 값, 휴지통, 작업 기록, 빌드 결과)
+.env*
+.bkit
+.claude
+trash-can
+node_modules
+.next
