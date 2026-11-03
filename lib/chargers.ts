@@ -7,8 +7,9 @@ import type { Charger, RestArea } from "./types";
 
 const API_URL = "https://apis.data.go.kr/B552584/EvCharger/getChargerInfo";
 const CACHE_MS = 60_000; // 같은 충전소는 60초 동안 다시 부르지 않는다 (실시간성과 호출 한도의 균형)
-const TIMEOUT_MS = 10_000; // 충전소 하나를 기다리는 최대 시간
-const DEADLINE_MS = 25_000; // 전체를 기다리는 최대 시간 (응답 1분 이내 목표, PLAN SC-1)
+// 공공데이터가 느릴 때 15초쯤 걸려 오는 응답도 받으려고 넉넉히 기다린다 (2026-11-03 측정: 0.1초~15.7초, 일부는 무응답)
+const TIMEOUT_MS = 20_000; // 충전소 하나를 기다리는 최대 시간
+const DEADLINE_MS = 40_000; // 전체를 기다리는 최대 시간 (AI 답변까지 합쳐 1분 이내 목표, PLAN SC-1)
 const CONCURRENCY = 6; // 한꺼번에 너무 많이 부르지 않도록
 
 type CacheEntry = { at: number; items: RawCharger[] };
@@ -63,7 +64,7 @@ function reasonOf(error: unknown): string {
 
 // 여러 휴게소의 충전기를 한 번에 가져온다.
 // 공공데이터가 반쯤 느릴 때도 받을 수 있는 만큼 받는다: 6곳씩 나눠 부르되 느린 곳이 다른 곳을 막지 않게 하고,
-// 전체 25초가 지나면 남은 충전소는 "불러오지 못함"으로 두고 끝낸다.
+// 전체 40초가 지나면 남은 충전소는 "불러오지 못함"으로 두고 끝낸다.
 export async function getChargers(restAreas: RestArea[]): Promise<ChargersResult> {
   const jobs = restAreas.flatMap((ra) => ra.stationIds.map((stationId) => ({ stationId, restAreaId: ra.id })));
   const chargers: Charger[] = [];
