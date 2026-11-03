@@ -21,9 +21,12 @@ export type ZoneLookup =
   | { kind: "notFound" }; // 수도권·부산권 밖이거나 모르는 이름
 
 const clean = (s: string) => s.replace(/\s+/g, "");
-// "해운대" → "해운대구"처럼 끝 글자(시·군·구)가 빠져도 맞춘다
-const sameName = (input: string, sigungu: string) =>
-  input === sigungu || (input.length >= 2 && sigungu.slice(0, -1) === input);
+// "해운대" → "해운대구"처럼 끝 글자(시·군·구)가 빠져도 맞춘다.
+// AI가 "강남역"처럼 역 이름을 그대로 넘겨도 "강남"으로 보고 맞춘다.
+const sameName = (input: string, sigungu: string) => {
+  const name = input.length >= 3 && input.endsWith("역") ? input.slice(0, -1) : input;
+  return name === sigungu || (name.length >= 2 && sigungu.slice(0, -1) === name);
+};
 
 export function getZone(id: string): Zone | undefined {
   return zones.find((z) => z.id === id);
