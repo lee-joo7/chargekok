@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import type { ChatErrorResponse, ChatMessage, ChatResponse, UserSettings } from "@/lib/types";
 
 import RecommendationCard from "./RecommendationCard";
+import ResultNotice from "./ResultNotice";
 import SaveRouteButton from "./SaveRouteButton";
 import SavedRoutes, { routeQuestion } from "./SavedRoutes";
 
@@ -112,6 +113,7 @@ export default function ChatWindow({ settings }: { settings: UserSettings }) {
                 </p>
               )}
               <p className="whitespace-pre-wrap rounded-2xl rounded-bl-sm bg-zinc-100 px-3 py-2 text-sm dark:bg-zinc-900">{b.content}</p>
+              {result && <ResultNotice result={result} onPick={pickRoute} />}
               {result?.kind === "ok" && (
                 <>
                   <p className="text-xs text-zinc-500">
@@ -122,7 +124,11 @@ export default function ChatWindow({ settings }: { settings: UserSettings }) {
                   ))}
                 </>
               )}
-              {understood && <SaveRouteButton understood={understood} />}
+              {/* 안내할 수 있는 경로일 때만 저장 버튼 (범위 밖·도로 불일치·어느 구인지 되묻기면 숨김) */}
+              {understood &&
+                (result?.kind === "ok" || (result?.kind === "needsMoreInfo" && (result.ask === "배터리" || result.ask === "차종또는km"))) && (
+                  <SaveRouteButton understood={understood} />
+                )}
             </div>
           );
         })}

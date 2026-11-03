@@ -7,7 +7,8 @@ import type { Charger, RestArea } from "./types";
 
 const API_URL = "https://apis.data.go.kr/B552584/EvCharger/getChargerInfo";
 const CACHE_MS = 60_000; // 같은 충전소는 60초 동안 다시 부르지 않는다 (실시간성과 호출 한도의 균형)
-const TIMEOUT_MS = 8_000;
+const TIMEOUT_MS = 10_000; // 충전소 하나를 기다리는 최대 시간
+const DEADLINE_MS = 25_000; // 전체를 기다리는 최대 시간 (응답 1분 이내 목표, PLAN SC-1)
 const CONCURRENCY = 6; // 한꺼번에 너무 많이 부르지 않도록
 
 type CacheEntry = { at: number; items: RawCharger[] };
@@ -20,8 +21,8 @@ export type ChargersResult = {
   failedStationIds: string[]; // 불러오지 못한 충전소 (그 휴게소는 "확인할 수 없음")
 };
 
-// 충전소 하나의 충전기 목록 (캐시 → 없으면 공공데이터 호출, 한 번 다시 시도)
-async function fetchStation(stationId: string): Promise<RawCharger[]> {
+// 충전소 하나의 충전기 목록 (캐시 → 없으면 공공데이터 호출, 남은 시간이 넉넉하면 한 번 다시 시도)
+async function fetchStation(stationId: string, deadline: number): Promise<RawCharger[]> {
   const hit = cache.get(stationId);
   if (hit && Date.now() - hit.at < CACHE_MS) return hit.items;
 
@@ -35,10 +36,12 @@ async function fetchStation(stationId: string): Promise<RawCharger[]> {
   url.searchParams.set("statId", stationId);
   url.searchParams.set("dataType", "JSON");
 
-  let lastError: unknown;
+  let lastError: unknown = new ChargerApiError("시간 초과");
   for (let attempt = 0; attempt < 2; attempt++) {
+    const left = deadline - Date.now();
+    if (left < 1_000) break; // 전체 기다림 시간이 거의 끝났으면 더 부르지 않는다
     try {
-      const res = await fetch(url, { cache: "no-store", signal: AbortSignal.timeout(TIMEOUT_MS) });
+      const res = await fetch(url, { cache: "no-store", signal: AbortSignal.timeout(Math.min(TIMEOUT_MS, left)) });
       if (!res.ok) throw new ChargerApiError(`HTTP ${res.status}`);
       const body = (await res.json()) as { items?: { item?: RawCharger[] } };
       const items = body.items?.item ?? [];
@@ -58,33 +61,32 @@ function reasonOf(error: unknown): string {
   return cause ? `${error.name} (${cause})` : error.name;
 }
 
-// 여러 휴게소의 충전기를 한 번에 가져온다. 일부 충전소가 실패해도 나머지는 돌려준다.
+// 여러 휴게소의 충전기를 한 번에 가져온다.
+// 공공데이터가 반쯤 느릴 때도 받을 수 있는 만큼 받는다: 6곳씩 나눠 부르되 느린 곳이 다른 곳을 막지 않게 하고,
+// 전체 25초가 지나면 남은 충전소는 "불러오지 못함"으로 두고 끝낸다.
 export async function getChargers(restAreas: RestArea[]): Promise<ChargersResult> {
   const jobs = restAreas.flatMap((ra) => ra.stationIds.map((stationId) => ({ stationId, restAreaId: ra.id })));
   const chargers: Charger[] = [];
   const failedStationIds: string[] = [];
   let firstFailure = "";
+  const deadline = Date.now() + DEADLINE_MS;
+  let next = 0;
 
-  for (let i = 0; i < jobs.length; i += CONCURRENCY) {
-    const batch = jobs.slice(i, i + CONCURRENCY);
-    const results = await Promise.allSettled(batch.map((job) => fetchStation(job.stationId)));
-    results.forEach((result, k) => {
-      const job = batch[k];
-      if (result.status === "rejected") {
+  async function worker() {
+    while (next < jobs.length) {
+      const job = jobs[next++];
+      try {
+        for (const raw of await fetchStation(job.stationId, deadline)) {
+          const charger = toCharger(raw, job.restAreaId);
+          if (charger) chargers.push(charger);
+        }
+      } catch (error) {
         failedStationIds.push(job.stationId);
-        firstFailure ||= result.reason instanceof Error ? result.reason.message : String(result.reason);
-        return;
+        firstFailure ||= error instanceof Error ? error.message : String(error);
       }
-      for (const raw of result.value) {
-        const charger = toCharger(raw, job.restAreaId);
-        if (charger) chargers.push(charger);
-      }
-    });
-    // 첫 묶음이 모두 실패하면 공공데이터 장애로 보고 더 기다리지 않는다 (응답 1분 이내 목표, PLAN SC-1)
-    if (i === 0 && failedStationIds.length === batch.length) {
-      throw new ChargerApiError(`충전기 정보를 불러올 수 없습니다: ${firstFailure}`);
     }
   }
+  await Promise.all(Array.from({ length: Math.min(CONCURRENCY, jobs.length) }, worker));
 
   // 전부 실패했으면 서비스 장애로 보고 오류를 낸다 (화면에 502 안내)
   if (jobs.length > 0 && failedStationIds.length === jobs.length) {

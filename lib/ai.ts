@@ -21,7 +21,8 @@ const SYSTEM_PROMPT = `너는 "충전콕"이라는 전기차 충전 안내 챗�
 할 일
 - 사용자가 출발지·도착지를 말하면 find_charging_stops 도구를 불러 충전할 휴게소를 찾는다.
 - 주소는 시·도와 시·군·구까지만 뽑아서 도구에 넣는다. 동·번지·아파트 이름 같은 자세한 주소는 버린다.
-- 시·도는 항상 채운다. 동네·역·건물 이름은 그곳이 속한 시·군·구로 바꾼다.
+- 시·도는 확실할 때만 채운다. 동네·역·건물 이름은 그곳이 속한 시·군·구로 바꾼다.
+- 중구·동구·서구·남구·북구·강서구처럼 여러 도시에 같은 이름이 있는 구를 시·도 없이 말했으면, 시·도를 짐작하지 말고 null로 둔다 (도구가 어느 도시인지 되묻게 한다).
   예: 해운대 우동 → 부산 해운대구 / 강남역 → 서울 강남구 / 송도 → 인천 연수구 / 영통 → 경기 수원시 / 분당·판교 → 경기 성남시 / 인천공항·영종도 → 인천 영종구
 - 인천은 2026년 7월부터 구가 바뀌었다: 옛 중구·동구 내륙 → 제물포구, 영종도 → 영종구, 옛 서구 검단 지역 → 검단구, 옛 서구 나머지 → 서해구.
 - "서울", "부산"처럼 도시 이름만 말했으면 origin_sigungu나 destination_sigungu에 그 도시 이름을 그대로 넣는다.
@@ -115,14 +116,16 @@ async function findChargingStops(args: ToolArgs, settings: UserSettings): Promis
 
   // 갈 수 있는 거리 안의 휴게소만 실시간 상태를 부른다 (공공데이터 호출을 줄이려고)
   const reachable = decision.plan.candidates.filter((c) => c.kmFromOrigin <= range.usableKm).map((c) => c.restArea);
-  const { chargers } = reachable.length ? await getChargers(reachable) : { chargers: [] };
-  const result = recommend({
+  const { chargers, failedStationIds } = reachable.length ? await getChargers(reachable) : { chargers: [], failedStationIds: [] };
+  const recommended = recommend({
     plan: decision.plan,
     usableKm: range.usableKm,
     chargers,
     operatorIds: settings.operatorIds,
     vehicle: getVehicle(settings.vehicleId),
   });
+  // 일부 충전소를 못 불러왔으면 숨기지 않고 함께 알린다
+  const result = failedStationIds.length ? { ...recommended, unavailableStations: failedStationIds.length } : recommended;
   return { result, understood };
 }
 
@@ -151,6 +154,7 @@ function toToolMessage(result: StopsResult, understood: Understood, now = Date.n
       ...(r.firstReason && { firstReasonText: FIRST_REASON_TEXT[r.firstReason] }),
     })),
     ...(result.emptyReason && { emptyReasonText: EMPTY_REASON_TEXT[result.emptyReason] }),
+    ...(result.unavailableStations && { note: `충전소 ${result.unavailableStations}곳의 정보를 불러오지 못해 일부 휴게소는 확인할 수 없음` }),
   };
 }
 

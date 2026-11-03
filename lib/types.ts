@@ -126,6 +126,7 @@ export type StopsResult =
       reachableWithoutCharge: boolean;
       recommendations: Recommendation[]; // 0~3개
       emptyReason?: EmptyReason; // 0개일 때 이유
+      unavailableStations?: number; // 공공데이터에서 불러오지 못한 충전소 수 (그 휴게소는 충전기 수가 적게 보일 수 있음)
     }
   | { kind: "needsMoreInfo"; ask: "배터리" | "차종또는km" | "출발지" | "도착지"; candidates?: string[] } // 같은 이름의 구가 여러 곳이면 후보
   | { kind: "outOfScope"; why: "지역밖" | "같은권역" }
