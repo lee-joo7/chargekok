@@ -113,6 +113,11 @@ export default function ChatWindow({ settings }: { settings: UserSettings }) {
                 </p>
               )}
               <p className="whitespace-pre-wrap rounded-2xl rounded-bl-sm bg-zinc-100 px-3 py-2 text-sm dark:bg-zinc-900">{b.content}</p>
+              {answer?.sampleData && result && (
+                <p role="note" className="rounded-lg bg-amber-100 px-3 py-2 text-xs text-amber-900 dark:bg-amber-950 dark:text-amber-200">
+                  연습 모드: 실제가 아닌 가짜 충전기 정보로 만든 추천이에요
+                </p>
+              )}
               {result && <ResultNotice result={result} onPick={pickRoute} />}
               {result?.kind === "ok" && (
                 <>

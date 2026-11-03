@@ -3,7 +3,7 @@
 import OpenAI from "openai";
 
 import { chat } from "@/lib/ai";
-import { ChargerApiError } from "@/lib/chargers";
+import { ChargerApiError, isSampleMode } from "@/lib/chargers";
 import type { ChatErrorResponse, ChatMessage, ChatRequest, ChatResponse } from "@/lib/types";
 
 const MAX_INPUT_CHARS = 500; // 질문 한 번은 500자까지 (PRD 7번)
@@ -36,7 +36,8 @@ export async function POST(request: Request) {
   try {
     const recent = messages.slice(-MAX_HISTORY).map((m) => ({ role: m.role, content: m.content.slice(0, MAX_INPUT_CHARS) }));
     const answer = await chat(recent, { operatorIds, vehicleId });
-    return Response.json(answer satisfies ChatResponse);
+    const body: ChatResponse = isSampleMode() ? { ...answer, sampleData: true } : answer;
+    return Response.json(body);
   } catch (error) {
     // 공공데이터나 AI 서비스가 응답하지 않을 때
     if (error instanceof ChargerApiError || error instanceof OpenAI.APIError) {

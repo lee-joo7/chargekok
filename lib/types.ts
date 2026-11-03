@@ -174,6 +174,7 @@ export type ChatResponse = {
   reply: string;
   understood: Understood;
   result: StopsResult | null; // AI가 추천 도구를 부르지 않은 답(인사, 출발지 되묻기 등)이면 null
+  sampleData?: true; // 연습 모드(가짜 충전기 정보)로 만든 답이면 true
 };
 
 export type ChatErrorResponse = {
